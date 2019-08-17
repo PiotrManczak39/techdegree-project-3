@@ -1,0 +1,42 @@
+/* -----  HTML Element Selectors ------ */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    margin: 0;
+}
+
+header {
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 25px 0;
+}
+
+/* ----- Class Selectors ------ */
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+}
+
+.intro p,
+.intro h3 {
+  align-self: center;
+}
+
+.intro h3 {
+  padding-bottom: 8px;
+}
+
+.main-content {
+  max-width: 90%;
+  margin: auto;
+}
+
+/* ----- Media Queries Selectors ------ */
+
+@media(min-width: 769px) {
+
+}
