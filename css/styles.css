@@ -6,6 +6,15 @@
     margin: 0;
 }
 
+button {
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  background-color: #76c7bf;
+  font-size: 1.2em;
+}
+
 header {
   text-align: center;
   color: white;
@@ -13,12 +22,42 @@ header {
   padding: 25px 0;
 }
 
+fieldset {
+  border: none;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  color: #c1bbc5;
+  padding-bottom: 180px;
+}
+
+input::placeholder {
+  text-align: right;
+}
+
+textarea {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background-color: #f7f1f1;
+  border: none;
+}
+
 /* ----- Class Selectors ------ */
+
+.form-header {
+  padding: 25px 0;
+}
 
 .intro {
   display: flex;
   flex-direction: column;
   padding: 30px 0;
+  border-bottom: double 5px black;
 }
 
 .intro p,
@@ -30,9 +69,34 @@ header {
   padding-bottom: 8px;
 }
 
+.intro p {
+  text-align: center;
+}
+
 .main-content {
   max-width: 90%;
   margin: auto;
+}
+
+.name,
+.mail,
+.phone,
+.address,
+.city,
+.state,
+.zip_code {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+}
+
+.part2 {
+  border-top: solid 2px black;
+}
+
+.topic,
+.format {
+  padding: 20px 0;
 }
 
 /* ----- Media Queries Selectors ------ */
