@@ -42,7 +42,7 @@ select {
   border-style: none;
   background-color: #f7f1f1;
   border-radius: 7px;
-  padding: 15px 5% 15px;
+  padding: 15px 15px 15px;
 }
 
 input::placeholder {
@@ -105,14 +105,7 @@ textarea {
   margin: auto;
 }
 
-.name,
-.mail,
-.phone,
-.address,
-.city,
-.state,
-.zip_code {
-  flex-wrap: wrap;
+.item {
   display: flex;
   flex-direction: column;
 }
@@ -142,5 +135,24 @@ textarea {
 /* ----- Media Queries Selectors ------ */
 
 @media(min-width: 769px) {
+
+  .item {
+    flex-direction: row;
+  }
+
+  .item input,
+  .item select {
+    margin-left: 7%;
+  }
+
+  .item label + input,
+  .state label + select {
+    flex-grow: 1;
+    margin-bottom: 15px;
+  }
+
+  .main-content {
+    max-width: 80%;
+  }
 
 }
