@@ -114,6 +114,11 @@ textarea {
   flex-direction: column;
 }
 
+.zip_code {
+  display: flex;
+  flex-direction: column;
+}
+
 .part1 {
   border-bottom: solid 2px black;
 }
@@ -151,14 +156,6 @@ textarea {
     max-width: 70%;
   }
 
-  .zip_code {
-    max-width: 60%;
-  }
-
-  .zip_code input {
-    margin-left: 33%;
-  }
-
   .item label + input,
   .state label + select {
     flex-grow: 1;
@@ -167,6 +164,24 @@ textarea {
 
   .main-content {
     max-width: 80%;
+  }
+
+  .zip_code {
+    display: block;
+  }
+
+  .zip_code label,
+  .zip_code input {
+    display: inline-block;
+    float: left;
+  }
+
+  .zip_code label {
+    width: 30%;
+  }
+
+  #zip_code {
+    width: 35%;
   }
 
 }
