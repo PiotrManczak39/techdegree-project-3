@@ -51,6 +51,11 @@ input::placeholder {
   text-align: right;
 }
 
+input:focus,
+select:focus {
+  background-color: #F3D8D7;
+}
+
 legend {
   font-size: 1.25em;
 }
@@ -127,12 +132,9 @@ textarea {
   padding-top: 20px;
 }
 
-.part2 p {
-  padding-bottom: 20px;
-}
-
 .part2 textarea {
   padding-bottom: 60px;
+  margin-top: 20px;
 }
 
 .topic,
@@ -143,7 +145,7 @@ textarea {
 
 /* ----- Media Queries Selectors ------ */
 
-@media(min-width: 769px) {
+@media(min-width: 768px) {
 
   .item {
     flex-direction: row;
